@@ -8,19 +8,36 @@ kilometre = 1000.0       # A floating point
 print(sayac)
 print kilometre
 
-#Strings
-isim = 'Ali'       # A string
+#Bool
+x = True
+y = not x
 print
-print isim
+print x
+print y
 
+print(10 > 9)       #True
+print(10 == 9)      #False
+print(10 < 9)       #False
+
+#Strings
 str = 'Hello World!'
 print
+print(len(str))
 print str          # String yazdırır
 print str[0]       # String ilk elemanını yazdırır
 print str[2:5]     # 3. karakterden 5. karaktere kadar olan elemanları yazdırır
 print str[2:]      # 3. karakterden itibaren tum elemanlari yazdirir.
 print str * 2      # Stringi iki defa basar
 print str + "TEST" # Stringi yeni ifade ile birleştirir.
+print(str.split(",")) # returns ['Hello', ' World!']
+print
+
+m = "awesome"
+print("Python " + m)
+
+txt = "T3 IOT Egitimi Gungoren"
+x = "ungor" in txt
+print(x)
 
 #Lists
 list = [ 'Ece', 786 , 2.23, 'Can', 70.2 ]
@@ -42,6 +59,7 @@ dict = {}
 dict['one'] = "This is one"
 dict[2] = "This is two"
 
+"""
 tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
 
 print
@@ -51,6 +69,13 @@ print dict[2]           # Prints value for 2 key
 print tinydict          # Prints complete dictionary
 print tinydict.keys()   # Prints all the keys
 print tinydict.values() # Prints all the values
+"""
 
+#Casting
 
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
 
+print
+print type(kilometre)
